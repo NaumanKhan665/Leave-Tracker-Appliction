@@ -1,3 +1,16 @@
-import { LightningElement } from 'lwc';
+import { LightningElement,api } from 'lwc';
+const columns = [
+  
+    { label: 'Request Id', fieldName: 'Name' },
+    { label: 'From Date', fieldName: 'From_Date__c', type: 'date' },
+    { label: 'To Date', fieldName: 'To_Date__c', type: 'date'},
+    { label: 'Reason', fieldName: 'Reson__c'},
+    { label: 'Status', fieldName: 'Status__c', type: 'picklist' },
+    { label: 'Manager Comments', fieldName: 'Manager_Comment__c'},
+];
+export default class MyLeaves extends LightningElement {
+ columns = columns;
+@api showData=[];
 
-export default class MyLeaves extends LightningElement {}
+
+}
