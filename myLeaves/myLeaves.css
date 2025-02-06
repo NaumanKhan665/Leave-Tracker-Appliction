@@ -1,0 +1,8 @@
+.right-aligned-button{ 
+   
+    right: 20px;  /* Adjust this value to move the element horizontally */
+    top: 20px;    /* Adjust this value to move the element vertically */
+    z-index: 9999; /* Ensure it appears on top of other elements */
+    color: blue;
+    background-color: brown;
+}
