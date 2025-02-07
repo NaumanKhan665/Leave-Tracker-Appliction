@@ -6,3 +6,15 @@
     color: blue;
     background-color: brown;
 }
+
+.active-row {
+    background-color:blue /* Light green */
+}
+
+.inactive-row {
+    background-color: #f8d7da; /* Light red */
+}
+
+.pending-row {
+    background-color: #fff3cd; /* Light yellow */
+}

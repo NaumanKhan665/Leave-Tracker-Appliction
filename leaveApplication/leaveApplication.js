@@ -1,17 +1,18 @@
 import { LightningElement,wire,api } from 'lwc';
-import getLeaveRequests  from '@salesforce/apex/leaveReuestsController.getLeaveRequests';
+import leavesForApproval  from '@salesforce/apex/leaveReuestsController.leavesForApproval';
 
 export default class LeaveApplication extends LightningElement {
 
   Data;
+  leavesForApprove;
 
-@wire(getLeaveRequests)
-LeavesRequstsData({data,error})
+
+@wire(leavesForApproval)
+LeaveApprovalData({data,error})
 {
-    console.log(data);
-    this.Data=data;
+    
+    this.leavesForApprove=data;
 
 }
-
 
 }
